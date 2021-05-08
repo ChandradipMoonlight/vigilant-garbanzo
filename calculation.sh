@@ -15,6 +15,12 @@ function sub() {
 	echo $c
 }
 
+function mul() {
+        local a=$1
+        local b=$2
+        local c=$(( $a * $b))
+        echo $c
+}
 
 a=15
 b=13
@@ -23,3 +29,6 @@ echo $result
 
 resultSub="$(sub $a $b)"
 echo $resultSub
+
+resultMul="$(mul $a $b)"
+echo $resultMul
